@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-black;
+}
+
 h1 {
-  @apply text-5xl;
+  @apply text-7xl;
 }
 h2 {
   @apply text-4xl;
@@ -13,4 +17,10 @@ h3 {
 }
 li {
   @apply list-none;
+}
+.primary-btn {
+  @apply text-white bg-blue-900 py-4 px-12 rounded-full;
+}
+.secondary-btn {
+  @apply text-white py-3 px-11 rounded-full border-4 border-blue-900;
 }
