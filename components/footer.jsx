@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="flex justify-center mt-28 mb-4">
+    <section className="flex justify-center mt-28 mb-4 absolute w-full -bottom-0">
       <Image
         className=" opacity-75 hover:opacity-100 w-14 mx-4"
         src={linkedIn}

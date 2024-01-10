@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section>
       <h1 className="text-white text-center mb-12">My Projects</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center pb-20">
         {ProjectList.map((list) => (
           <div key={list.id}>
             <SmCard
