@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-around items-center px-20 pb-40">
+    <div className="flex flex-wrap justify-around items-center px-20 pb-40 mt-14">
       <section className="flex-col w-1/3 ">
         <h2 className="text-white p-4">Lets Connect</h2>
         <p className="text-gray-400 p-4">

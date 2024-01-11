@@ -4,10 +4,9 @@ import React from "react";
 import ProjectList from "@/components/projectList";
 
 const Projects = () => {
-  console.log(ProjectList[0].portTitle);
   return (
     <section>
-      <h1 className="text-white text-center mb-12">My Projects</h1>
+      <h1 className="text-white text-center mb-4 mt-14">My Projects</h1>
       <div className="flex flex-wrap justify-center pb-20">
         {ProjectList.map((list) => (
           <div key={list.id}>

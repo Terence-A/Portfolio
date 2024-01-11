@@ -3,7 +3,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between items-center  pt-6 pb-6 border-b-2 border-gray-400 border-opacity-25 mb-28 sticky top-0 bg-black">
+    <nav className="flex justify-between items-center  py-2 border-b-2 border-gray-400 border-opacity-25 sticky top-0 bg-black">
       <Link href="/">
         <h2 className="text-white font-semibold ml-20 hover:text-yellow-500 hover:duration-200 border-4  rounded-full p-4 hover:border-black hover:bg-blue-800">
           TA
