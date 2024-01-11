@@ -1,11 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import signImg from "@/public/images/sign.jpg";
 import Image from "next/image";
+import AboutList from "@/components/aboutList";
 
 const About = () => {
+  const [menuItem, setMenuItem] = useState("Skills");
+
+  const handleSelect = (selectedBtn) => {
+    console.log(selectedBtn);
+    setMenuItem(selectedBtn);
+  };
+
   return (
-    <section className="flex flex-wrap  p-4">
-      <div className="w-1/2 pl-16">
+    <section className="flex flex-wrap justify-between  p-4">
+      <div className="w-[600px] pl-28 ">
         <Image src={signImg} alt="image of sign saying do something great" />
       </div>
       <div className="text-white w-1/2 px-28 h-100 flex-col mt-12">
@@ -23,17 +33,20 @@ const About = () => {
           laborum consequuntur dolorum quia aut placeat.
         </p>
         <div>
-          <ul className="flex">
-            <li className="px-2 hover:border-b-8 hover:border-blue-800 hover:duration-150">
+          <menu className="flex absolute ">
+            <AboutList onSelect={() => handleSelect("Skills")}>
               Skills
-            </li>
-            <li className="px-2 hover:border-b-8 hover:border-blue-800 hover:duration-150">
+            </AboutList>
+            <AboutList onSelect={() => handleSelect("Education")}>
               Education
-            </li>
-            <li className="px-2 hover:border-b-8 hover:border-blue-800 hover:duration-150">
+            </AboutList>
+            <AboutList onSelect={() => handleSelect("Certifications")}>
               Certifications
-            </li>
-          </ul>
+            </AboutList>
+          </menu>
+          <article className="mt-2 relative top-8 mb-36  pl-4 ">
+            <p>{menuItem}</p>
+          </article>
         </div>
       </div>
     </section>
